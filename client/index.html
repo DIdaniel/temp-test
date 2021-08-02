@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>아직 정하지 못했다</title>
+  </head>
+  <body>
+    <!-- Loading -->
+    <div class="loader hidden">
+      <img src="./Icons/rocket.svg" alt="rocket" hidden />
+    </div>
+
+    <!-- not using yet ("full-container" => 안쓰면 지워버리지뭐..) -->
+    <div class="full-container">
+      <!-- Navigation -->
+      <div class="navigation-container">
+        <p>이클립스 인강 고르기</p>
+        <p class="clickable">My Wish</p>
+      </div>
+
+      <!-- Carousel  -->
+      <section class="carousel-container">
+        <div class="slide-wrapper">
+          <article class="slide">
+            <img src="./images/banner-1.png" class="img" alt="blond" />
+          </article>
+          <article class="slide">
+            <img src="./images/banner-2.png" class="img" alt="blond" />
+          </article>
+          <article class="slide">
+            <img src="./images/banner-3.png" class="img" alt="blond" />
+          </article>
+          <article class="slide">
+            <img src="./images/banner-4.png" class="img" alt="blond" />
+          </article>
+        </div>
+        <div class="btn-wrapper">
+          <button class="first-btn"></button>
+          <button class="second-btn"></button>
+          <button class="third-btn"></button>
+          <button class="fourth-btn"></button>
+        </div>
+      </section>
+
+      <!-- Search container  -->
+      <section class="search-container">
+        <div class="search-input">
+          <!-- <p>인프랩에서 당신의 성장을 도와드려요!</p> -->
+          <!-- <div class="search-wrapper"> -->
+          <input class="search-box" type="text" placeholder="Search..." />
+          <div class="auto-box"></div>
+          <div class="searchIcon"><i class="fas fa-search"></i></div>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <!-- Courses container  -->
+      <section class="course-container"></section>
+    </div>
+
+    <footer>
+      <small>Copyright @Patrick</small>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

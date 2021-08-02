@@ -1,0 +1,214 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: whitesmoke; */
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background: pink;
+}
+
+.navigation-container 
+
+/* CAROUSEL */
+.carousel-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.carousel-container .slide-wrapper {
+  width: 400vw;
+  transition: 1s all;
+  z-index: 2;
+}
+
+.carousel-container .slide-wrapper .slide {
+  width: 100vw;
+  float: left;
+}
+
+.carousel-container .slide-wrapper .slide img {
+  width: 100%;
+  height: 23rem;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 28rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-btn,
+.second-btn,
+.third-btn,
+.fourth-btn {
+  width: 5rem;
+  height: 1rem;
+  border-radius: 50px;
+  margin: 0 20px;
+}
+
+.first-btn:hover,
+.second-btn:hover,
+.third-btn:hover,
+.fourth-btn:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* //////////////////Search - Input Tag//////////////// */
+
+/* .search-container {
+  text-align: center;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.search-container .search-wrapper {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-container .search-wrapper .search-box {
+  border: none;
+  width: 30em;
+  height: 3em;
+  padding-left: 2%;
+}
+
+.search-container .search-wrapper .search-box:focus {
+  color: #6d7f8f;
+  outline: none;
+} */
+
+/* ul => auto-box */
+/* li => searchLists */
+/* .search-container .auto-box {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; */
+/* padding: 0 34rem; */
+/* padding-left: 35%; */
+
+/* .search-container .search-wrapper button {
+  padding: 0.6rem 1rem;
+  background: none;
+  border: none;
+} */
+
+.search-container {
+  position: relative;
+  border: 5px solid red;
+  max-width: 500px;
+  /* z-index: -1; */
+  margin: 25rem auto 2rem;
+  /* height: 30rem; */
+  overflow-x: hidden;
+}
+
+.search-container .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  /* position: absolute; */
+  height: 55px;
+  width: 100%;
+  outline: none;
+  /* border: none; */
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input .searchIcon {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  top: 1.7rem;
+  right: 0%;
+  transform: translate(0%, -50%);
+  color: green;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+.search-input .auto-box {
+  /* padding: 10px 8px; */
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-input .search-lists {
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+
+.auto-box li:hover {
+  background: #efefef;
+}
+
+/* //////////////////COURSES//////////////// */
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  z-index: 2;
+}
+
+.course-container .course-card {
+  border: 0.3rem solid #cccccc;
+  margin: 2%;
+  width: 27rem;
+  transition: 0.3s all;
+}
+
+.course-container .course-card:hover {
+  box-shadow: 0px 3px 7px rgb(85, 85, 85);
+}
+
+.course-container .course-card .course-card-image {
+  width: 100%;
+}
+
+.course-container .course-card .course-title,
+.course-container .course-card .course-instructor,
+.course-container .course-card .course-price {
+  margin: 0 0 2% 2%;
+  /* border: 2px solid red; */
+}
